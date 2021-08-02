@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+  }
+  
+  .container {
+    height: 100vh;
+  }
+  
+  .title-section {
+    outline: none;
+    height: 4%;
+    background-color: #107c41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .menu-bar-section {
+    height: 4%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    outline: none;
+  }
+  
+  .menu-bar-section div {
+    position: relative;
+    margin-left: 20px;
+    font-size: 17px;
+    color: #055a2b;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .menu-bar-section div:hover{
+    color:grey;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .menu-bar-section div span span:hover{
+    transform: scale(1.1);
+    color:green;
+  }
+  .menu-options-section {
+    height: 8%;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    
+    background-color: rgb(243, 237, 237);
+  }
+  .menu-options-section .material-icons:hover{
+    background-color: lightgray;
+    transform: scale(1.5);
+    
+  }
+  .file_opt{
+    height: 5rem;;
+  }
+  .formula-section {
+    height: 4%;
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .formula-section .selected-cell-div {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid;
+    align-items: center;
+  }
+  
+  .formula-section input {
+    display: block;
+    width: 80%;
+    height: 100%;
+    border: 1px solid;
+    outline: none;
+  }
+  
+  .grid {
+    height: 76%;
+    overflow: auto;
+    position: relative;
+  }
+  
+  .sheets-section {
+    height: 4%;
+    background-color: #107c41;
+    
+  }
+  
+  .blank-corner {
+    height: 30px;
+    width: 30px;
+    background-color: gray;
+    position: fixed;
+    top: 20vh;
+    left: 0;
+  }
+  
+  .row-number-section {
+    display: inline-block;
+    position: fixed;
+    top: calc(20vh + 30px);
+    left: 0;
+    z-index: -10;
+  }
+  
+  .row-number {
+    height: 30px;
+    width: 30px;
+    background-color: #107c41;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid;
+  }
+  
+  .column-tag-section {
+    height: 30px;
+    position: fixed;
+    background: bisque;
+    top: 20vh;
+    left: 30px;
+    display: flex;
+    z-index: -10;
+  }
+  
+  .column-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    flex-shrink: 0;
+    height: 30px;
+    background-color: #107c41;
+    border: none;
+    border-right: 1px solid;
+    color: white;
+  }
+  
+  .cell-section {
+    height: calc(76vh - 30px);
+    width: calc(100vw - 30px);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    overflow: auto;
+  }
+  
+  .cell {
+    width: 80px;
+    height: 30px;
+    border: 1px solid;
+    flex-shrink: 0;
+    outline: none;
+  }
+  
+  .cell-selected {
+    border: 2px solid rgb(60, 60, 218);
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .menu-options-section div {
+    border: 1px solid;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .bold-italics-underline,
+  .align-cell-content,
+  .cell-color-options {
+    width: 23%;
+  }
+  
+  .font-type-size {
+    width: 31%;
+    
+  }
+  .font_fam,.font_siz{
+    font-size: 16px;
+  }
+  
+  .file-drop-down {
+    position: absolute !important;
+    background-color: white;
+    left: -20px;
+    width: 4rem;
+    text-align: center;
+  }
+  .fnsign{
+    width:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sheets-section{
+    color: white;
+    font-weight: bold;
+    padding-left: 35px;
+    padding-top: 3px;
+    border: 1px solid white;
+  }
