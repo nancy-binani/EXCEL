@@ -195,31 +195,18 @@ for (let i = 1; i <= 100; i++) {
   cellSection.append(rowDiv);
 }
 
-// if (localStorage.getItem("sheet")) {
-//   console.log(1);
-//   dataObj = JSON.parse(localStorage.getItem("sheet"));
-
-//   for (let x in dataObj) {
-//     let cell = document.querySelector(`[data-address='${x}']`);
-//     if (dataObj[x].value) cell.innerText = dataObj[x].value;
-//     // dataObj[x]
-//   }
-// }
 
 // C1 = Formula(2*A1)
 // A1 = parent
 // C1 = child
 
-//is function kisi ki upstream se mtlb nhi hai
-//iska bs itna kaam h ki parent do and child do , aur mai parent ki downstream se child ko hta dunga
-//taki unke bichka connection khtm hojai
-//taki agr parent update ho to connection khtm hone ke baad child update na ho
+
 function removeFromDownstream(parentCell, childCell) {
   //1- fetch parentCell's downstream
 
   let parentDownstream = dataObj[parentCell].downstream;
 
-  //2- filter kro childCell ko parent ki downstream se
+  //2- filter  childCell from parent's downstream se
 
   let filteredDownstream = []; //a1
 
@@ -238,13 +225,7 @@ function updateCell(cell) {
   let upstream = cellObj.upstream; // [(A1-20), B1-10]
   let formula = cellObj.formula; // A1 + B1
 
-  // upstream me jobhi cell hai unke objects me jaunga whase unki value lekr aunga
-  // wo sari values mai ek object me key value pair form me store krunga where key being the cell address
-
-  // {
-  //   A1:20,
-  //   B1:10
-  // }
+ 
 
   let valObj = {};
 
